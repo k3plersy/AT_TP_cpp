@@ -1,0 +1,167 @@
+===========================
+  TESTE - ALGORITMI APM
+===========================
+
+--- TEST 1 (simplu - triunghi) ---
+3 3
+1 2 5
+2 3 3
+1 3 4
+Rezultat asteptat: cost 7, muchiile 2-3 (3), 1-3 (4)
+
+--- TEST 2 (simplu - linie) ---
+4 3
+1 2 2
+2 3 6
+3 4 1
+Rezultat asteptat: cost 9, toate 3 muchiile intra
+
+--- TEST 3 (mediu - 6 noduri) ---
+6 9
+1 2 4
+1 3 2
+2 4 5
+2 3 1
+3 4 8
+3 5 10
+4 6 2
+5 6 3
+2 5 7
+Rezultat asteptat: cost 13, muchiile 2-3 (1), 1-3 (2), 4-6 (2), 5-6 (3), 2-4 (5)
+
+--- TEST 4 (mare - 7 noduri, datele din atestat.in) ---
+7 11
+1 2 2
+1 7 4
+2 3 3
+2 5 2
+2 6 3
+2 7 3
+3 4 1
+3 5 2
+4 5 1
+5 6 3
+6 7 5
+Rezultat asteptat: cost 12
+
+--- TEST 5 (capcana - graf neconex, 2 componente) ---
+4 2
+1 2 3
+3 4 5
+Rezultat asteptat: ATENTIE graf neconex
+
+--- TEST 6 (capcana - nod izolat) ---
+4 3
+1 2 1
+1 3 2
+2 3 3
+Rezultat asteptat: ATENTIE graf neconex (nodul 4 e izolat)
+
+--- TEST 7 (capcana - costuri egale) ---
+4 5
+1 2 5
+1 3 5
+1 4 5
+2 3 5
+3 4 5
+Rezultat asteptat: cost 15 (orice 3 muchii sunt valide)
+
+--- TEST 8 (minim - 2 noduri, 1 muchie) ---
+2 1
+1 2 99
+Rezultat asteptat: cost 99, muchia 1-2
+
+--- TEST 9 (foarte mare - 10 noduri, 20 muchii) ---
+10 20
+1 2 3
+1 3 6
+1 4 9
+2 3 2
+2 5 8
+2 6 5
+3 4 4
+3 7 7
+4 8 1
+4 9 3
+5 6 2
+5 7 6
+6 8 4
+6 10 8
+7 8 3
+7 9 5
+8 9 2
+8 10 4
+9 10 6
+1 10 10
+Rezultat asteptat: cost 25
+Muchiile APM: 4-8 (1), 2-3 (2), 5-6 (2), 8-9 (2), 1-2 (3), 7-8 (3), 3-4 (4), 6-8 (4), 8-10 (4) -- ATENTIE: pot exista mai multe APM-uri valide cu acelasi cost
+
+--- TEST 10 (foarte mare - 15 noduri, 25 muchii) ---
+15 25
+1 2 4
+1 3 8
+2 4 3
+2 5 7
+3 4 5
+3 6 2
+4 7 6
+4 8 1
+5 9 4
+5 10 3
+6 7 2
+6 11 5
+7 8 4
+7 12 3
+8 9 6
+8 13 2
+9 10 1
+9 14 4
+10 11 3
+10 15 5
+11 12 2
+11 13 6
+12 13 1
+13 14 3
+14 15 2
+Rezultat asteptat: cost 32
+Muchiile APM: 4-8 (1), 9-10 (1), 12-13 (1), 3-6 (2), 6-7 (2), 8-13 (2), 11-12 (2), 14-15 (2), 2-4 (3), 5-10 (3), 7-12 (3), 10-11 (3), 13-14 (3), 1-2 (4) -- ATENTIE: pot exista mai multe APM-uri valide cu acelasi cost
+
+--- TEST 11 (foarte mare - 20 noduri, 35 muchii) ---
+20 35
+1 2 5
+1 3 3
+2 4 6
+2 5 2
+3 4 1
+3 6 4
+4 7 3
+4 8 5
+5 9 2
+5 10 4
+6 7 2
+6 11 6
+7 8 1
+7 12 3
+8 13 4
+8 14 2
+9 10 3
+9 15 5
+10 11 1
+10 16 4
+11 12 3
+11 17 2
+12 13 5
+12 18 1
+13 14 3
+13 19 4
+14 15 2
+14 20 3
+15 16 1
+16 17 4
+16 20 2
+17 18 3
+17 19 1
+18 19 2
+19 20 4
+Rezultat asteptat: cost 37
+Muchiile APM: 3-4 (1), 7-8 (1), 10-11 (1), 12-18 (1), 15-16 (1), 17-19 (1), 2-5 (2), 5-9 (2), 6-7 (2), 8-14 (2), 11-17 (2), 14-15 (2), 16-20 (2), 18-19 (2), 9-10 (3), 1-3 (3), 4-7 (3), 7-12 (3), 13-14 (3) -- ATENTIE: pot exista mai multe APM-uri valide cu acelasi cost

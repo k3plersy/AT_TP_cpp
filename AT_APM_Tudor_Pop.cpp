@@ -126,9 +126,8 @@ void alg_prim()
         minCost[i] = 999999;   // "infinit"
         parinte[i] = -1;
     }
-
-    // pornim din nodul 1
-    minCost[1] = 0;
+    minCost[1] = 0; // pornim din nodul 1
+    
     int S = 0;
 
     for (int pas = 0; pas < n; pas++)
